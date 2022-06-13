@@ -65,7 +65,7 @@ function Project() {
     [setSearch]
   );
 
-  return status === "loading" && !data ? (
+  return status === "loading" ? (
     <p>Loading...</p>
   ) : status === "error" ? (
     <p>Error: {error.message}</p>
